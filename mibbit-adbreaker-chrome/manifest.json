@@ -1,0 +1,26 @@
+{
+  "name": "Mibbit Adbreaker",
+  "version": "1.2.2",
+  "manifest_version": 2,
+
+  "description": "Remove advertisement from Mibbit automatically.",
+
+  "background": {
+    "scripts": ["eventPage.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*.mibbit.com/*", "https://*.mibbit.com/*"],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": ["injection.js"]
+    }
+  ],
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://*.mibbit.com/*", "https://*.mibbit.com/*", "https://s3.amazonaws.com/*.js"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Mibbit Adbreaker",
+  "name": "mibbit-adbreaker",
+  "version": "1.2.2",
+  "description": "Remove advertisement from Mibbit automatically.",
+  "main": "index.js",
+  "author": "phateio",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}
